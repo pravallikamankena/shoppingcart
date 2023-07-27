@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0%;
+            background-image: url("bg.png");
+            background-repeat:no-repeat;
+            background-size: contain;
+            min-height:70vh;
+            background-position:right 3em top 50px;
+        
+
+        }
+        .navigation{
+            background-color:aquamarine;
+            display:flex;
+            justify-content:space-around
+           
+        }
+        .navigation a{
+            font-size:1.5rem;
+            text-decoration:none;
+        }
+        .register{
+            border:1px;
+            width:40%
+        }
+        .register *{
+            margin-bottom:1%;
+            margin-top:5%;
+            margin-left:3%
+        }
+        .register div input{
+            padding:5px;
+            width:30vw;
+        }
+        .btn{
+            width:33vw;
+        
+        }
+        
+    </style>
+    <script>
+        function validation(){
+            var a=document.getElementById("a").value
+            var b=document.getElementById("b").value
+            console.log(a,b)
+            console.log(a+b)
+        }
+    </script>
+</head>
+<body>
+    <nav class="navigation">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+    <section class="register">
+        <div>
+            <input placeholder="Enter your name"/>
+        </div>
+        <div>
+            <input placeholder="Enter EmailID"/>
+        </div>
+        <div>
+            <input type="password" placeholder="Enter password" />
+        </div>
+        <div>
+            <input type="password" placeholder="Enter confirm password"/>
+        </div>
+        <p>
+            <input name="gender" type="radio"/>Male
+            <input name="gender" type="radio"/>Female
+        </p>
+
+        <button class="btn">Register</button>
+    </section>
+    
+</body>
+</html>
